@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1px;
+    width:100%;
+    max-width: 1280px;
+    min-height: 1250px;
+    box-shadow: 1px 35 55 rgba(0, 0, 0, 1);
+}
+
+.left{
+    position: relative;
+    background-color: #003147;
+    padding: 40px;
+}
+
+.imgbox{
+    display: flex;
+    justify-content: center;
+}
+
+.imgbox img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 10px;
+    animation: pic 4s infinite 0.2s;
+}
+
+.cont a{
+
+    text-decoration: none;
+    color: red;
+    padding: 5px;
+    position: relative;
+    left: 28%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    width: 100px;
+    height: 10px;
+    background-color: yellow;
+    border-radius: 5px;
+    
+}
+
+.left h1,h3,p{
+    color:white;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.left p{
+    font-size: 18px;
+}
+.yop{
+    font-weight: normal;
+}
+
+.right{
+    position: relative;
+    min-height: 1000px;
+    width: 100%;
+}
+
+.right .name{
+    font-size: 34px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #003147;
+}
+
+.right .dept{
+    color: #003147;
+    font-weight: normal;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.career{
+    color: #003147;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+.career p{
+    color: #003147;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: justify;
+}
+
+.prof {
+    color: #003147;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+.prof ul{
+    margin-left: 50px;
+}
+
+.prof ul li{
+    padding-top: 5px;
+    list-style-type:circle;
+    font-size: 22px;
+    text-align: justify;
+}
+
+li::marker{
+    font-size: 25px;
+}
+
+.project {
+    color: #003147;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+.project h1{
+    margin-top: 10px;
+}
+.project h2{
+    color: black;
+}
+
+.project1 td:nth-child(1){
+    font-size: 22px;
+    width: 250px;
+    height: 40px;
+}
+
+.project1 td:nth-child(2) {
+    font-size: 22px;
+    text-align: center;
+    width: 150px;
+    height: 40px;
+}
+
+.project1 td:nth-child(3) {
+    font-size: 22px;
+    width: 350px;
+    height: 40px;
+}
+.proh2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cert {
+    color: #003147;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;        
+}
+
+.cert h1{
+    margin-top: 10px;
+}
+
+.cert ul {
+    margin-left: 50px;
+}
+
+.cert ul li {
+    padding-top: 5px;
+    list-style-type: circle;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.bot{
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+}
+
+.ll{
+    margin-top: 20px;
+    position: relative;
+}
+
+.ll h2{
+    padding: 15px;
+}
+
+.rr {
+    position: relative;
+    left:75%;
+    bottom: 50px;
+}
+
+.rr h2 {
+    padding: 15px;
+}
+
+@keyframes pic {
+    0% {transform: scale(0.95);}
+    25% {transform: scale(1.0);}
+    50% {transform: scale(0.95);}
+    75% {transform: scale(1.0);}
+    100% {transform: scale(0.95);}
+}
